@@ -43,7 +43,7 @@ export class NxTreeItem extends TreeItem {
       return;
     }
     if (customIconPath) {
-      this.iconPath = customIconPath;
+      this.iconPath = new ThemeIcon(customIconPath);
       return;
     }
     if (this.contextValue === 'folder') {
